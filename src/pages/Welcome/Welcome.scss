@@ -1,0 +1,42 @@
+@import "./../../constants/variables";
+
+.welcome {
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 40%,
+      rgba(255, 255, 255, 0.25) 75%
+    ),
+    url("./../../assets/cake.jpg");
+  // background-image: url('./../../assets/candy.jpg');
+  display: flex;
+  flex-direction: column;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  //   transform: scaleX(-1);
+
+  &__content {
+    margin: 70px;
+    width: 65%;
+
+    &--logo {
+      display: block;
+      object-fit: contain;
+      width: 75px;
+      height: 75px;
+      box-shadow: $shadow;
+    }
+
+    &--main {
+      margin-top: 90px;
+
+      &__h1 {
+        color: $gray;
+        font-size: $h1;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        line-height: 55px;
+      }
+    }
+  }
+}

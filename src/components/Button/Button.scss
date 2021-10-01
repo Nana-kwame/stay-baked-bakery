@@ -1,0 +1,24 @@
+@import "./../../constants/variables";
+
+.button {
+  border-radius: $border-radius;
+  padding: $base;
+}
+
+.primary {
+  background-color: $primary;
+  border: none;
+  font-size: $h5;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+}
+
+.secondary {
+  background-color: $white;
+  border: $primary 1px solid;
+  font-size: $h5;
+  text-align: center;
+  color: $primary;
+  font-weight: 700;
+}

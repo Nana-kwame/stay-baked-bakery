@@ -1,0 +1,11 @@
+@import "./../../constants/variables";
+
+// @use './../../constants/variables';
+.card {
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  padding: $base;
+}
