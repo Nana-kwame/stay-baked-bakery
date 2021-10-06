@@ -7,14 +7,13 @@
       rgba(255, 255, 255, 0.25) 75%
     ),
     url("./../../assets/cake.jpg");
-  // background-image: url('./../../assets/candy.jpg');
+  // background-image: url('./../../assets/cake.jpg');
   display: flex;
   flex-direction: column;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  //   transform: scaleX(-1);
-
+  height: 100%;
+  background-color: #f3f5f4;
   &__content {
     margin: 70px;
     width: 65%;
@@ -32,10 +31,56 @@
 
       &__h1 {
         color: $gray;
-        font-size: $h1;
-        font-weight: 600;
+        font-size: 3em;
+        font-weight: 900;
         letter-spacing: -0.5px;
         line-height: 55px;
+      }
+
+      &__btnGroup {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $base;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 721px) and (max-device-width: 1060px) {
+  .welcome {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 40%,
+        rgba(255, 255, 255, 0.25) 75%
+      ),
+      url("./../../assets/cake.jpg");
+    // height: unset;
+
+    &__content {
+      &--main {
+        &__h1 {
+          font-size: $h1;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 720px) {
+  .welcome {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 40%,
+        rgba(255, 255, 255, 0.25) 75%
+      ),
+      url("./../../assets/cake.jpg");
+
+    &__content {
+      &--main {
+        &__h1 {
+          font-size: $h2;
+        }
       }
     }
   }

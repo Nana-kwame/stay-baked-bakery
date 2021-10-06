@@ -8,7 +8,7 @@ import * as browserHistory from "history";
 export const history = browserHistory.createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={browserHistory.createBrowserHistory()}>
+  <Router history={history}>
     <App />
   </Router>,
   document.getElementById("root")

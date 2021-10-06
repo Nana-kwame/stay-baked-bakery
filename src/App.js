@@ -27,7 +27,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router";
-import { Welcome } from "./pages";
+import { Welcome, Login, Home } from "./pages";
 
 class App extends Component {
   render() {
@@ -41,6 +41,8 @@ class App extends Component {
       // </div>
 
       <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/login" component={Login} />
         <Route path="" exact component={Welcome} />
       </Switch>
     );
